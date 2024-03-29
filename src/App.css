@@ -1,0 +1,39 @@
+body{
+  background: linear-gradient(300deg,rgb(12, 64, 82),rgb(154, 187, 218),rgb(13, 13, 36));
+  background-size: 180% 180%;
+  animation: gradient-animation 7s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.spin-animation {
+  animation: spin 4s linear infinite; /* Adjust the duration to make it spin slower or faster */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(180deg); /* Spin slowly for the first part */
+  }
+  30% {
+    transform: rotate(1000deg); /* Spin quickly for the middle part */
+  }
+  40% {
+    transform: rotate(1800deg); /* Spin slowly for the last part */
+  }
+  100% {
+    transform: rotate(2160deg); /* Complete rotation */
+  }
+}
